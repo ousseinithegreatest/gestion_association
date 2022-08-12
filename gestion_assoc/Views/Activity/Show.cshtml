@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Afficher une activité";
+}
+
+
+<div class="container">
+
+    <!-- Page-Title -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="pull-left page-title">Activité</h4>
+            <ol class="breadcrumb pull-right">
+                <li><a href="#">Moltran</a></li>
+                <li><a href="#">Activité</a></li>
+                <li class="active">Modifier activié</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="panel-title">Voir une activité</h3></div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="libelle">Libellé</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="libelle" placeholder="Saisir le libellé" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Type d'activité</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" disabled>
+                                        <option>Mbalax</option>
+                                        <option>Collecte de fond</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Date de début</label>
+                                <div class="col-md-10">
+                                    <input type="date" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Date de fin</label>
+                                <div class="col-md-10">
+                                    <input type="date" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="besoins">Besoins</label>
+                                <div class="col-md-10">
+                                    <textarea type="text" class="form-control" id="besoins" value="Matelas, chaises" disabled rows="4" cols="50"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="lieu">Lieu</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lieu" value="Han Maristes" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!-- panel-body -->
+                </div> <!-- panel -->
+            </div> <!-- col -->
+        </div>
+    </div>
+
+    <!-- Pls Remove -->
+    <div style="height:600px;"></div>
+
+
+</div> <!-- container -->

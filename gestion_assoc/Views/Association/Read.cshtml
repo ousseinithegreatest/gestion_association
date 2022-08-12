@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"] = "Infos association";
+}
+
+<!-- Start content -->
+<div class="content">
+    <div class="wraper container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="bg-light text-center">
+                    <div class="bg-picture text-center" style="background-image:url('images/big/bg.jpg')"></div>
+                    <div class="profile-info-name">
+                        <!-- <img src="images/avatar-1.jpg" class="thumb-lg img-circle img-thumbnail" alt="profile-image"> -->
+                        <h3 class="text-dark mb-auto">Tandarma</h3>
+                    </div>
+                </div>
+                <!--/ meta -->
+            </div>
+        </div>
+        <div class="row user-tabs">
+            <div class="col-lg-6 col-md-9 col-sm-9">
+                <ul class="nav nav-tabs tabs">
+                    <li class="active tab">
+                        <a href="#home-2" data-toggle="tab" aria-expanded="false" class="active">
+                            <span class="visible-xs"><i class="fa fa-home"></i></span>
+                            <span class="hidden-xs">Infos</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#profile-2" data-toggle="tab" aria-expanded="false">
+                            <span class="visible-xs"><i class="fa fa-user"></i></span>
+                            <span class="hidden-xs">Activité</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#settings-2" data-toggle="tab" aria-expanded="false">
+                            <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                            <span class="hidden-xs">Paramètres</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="tab-content profile-tab-content">
+                    <div class="tab-pane active" id="home-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Personal-Information -->
+                                <div class="panel panel-default panel-fill">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Informations de l'association</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="about-info-p">
+                                            <strong>Nom de l'association</strong>
+                                            <br />
+                                            <p class="text-muted">Tandarma</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Téléphone</strong>
+                                            <br />
+                                            <p class="text-muted">77 999 45 66</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Email</strong>
+                                            <br />
+                                            <p class="text-muted">tandarma@gmail.com</p>
+                                        </div>
+                                        <div class="about-info-p m-b-0">
+                                            <strong>Nombre de membre</strong>
+                                            <br />
+                                            <p class="text-muted">45</p>
+                                        </div>
+                                        <div class="about-info-p m-b-0">
+                                            <strong>Adresse</strong>
+                                            <br />
+                                            <p class="text-muted">Colobane</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Personal-Information -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="tab-pane" id="profile-2">
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+
+                            <div class="panel-body">
+                                <div class="timeline-2">
+                                    <div class="time-item">
+                                        <div class="item-info">
+                                            <p><a href="" class="text-info">Sophie Diop</a> a participer à la cotisation de l'association <a href="#" class="text-success">Tandarma</a>.</p>
+                                            <!-- <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Personal-Information -->
+                    </div>
+
+
+
+                    <div class="tab-pane" id="settings-2">
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Modifier association</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="FullName">Nom de l'association</label>
+                                        <input type="text" value="Tandarma" id="FullName" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre de membres</label>
+                                        <input type="number" value="45" id="nombre" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Username">Téléphone</label>
+                                        <input type="tel" value="77 785 45 22" id="Username" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="tel" value="tandarma@gmail.com" id="email" class="form-control">
+                                    </div>
+                                    <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Modifier</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- Personal-Information -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- container -->
+
+</div> <!-- content -->
