@@ -1,4 +1,7 @@
-﻿@{
+﻿@model gestion_assoc.Models.UpdateAssociationViewModel
+
+
+@{
     ViewData["Title"] = "Infos association";
 }
 
@@ -11,7 +14,7 @@
                     <div class="bg-picture text-center" style="background-image:url('images/big/bg.jpg')"></div>
                     <div class="profile-info-name">
                         <!-- <img src="images/avatar-1.jpg" class="thumb-lg img-circle img-thumbnail" alt="profile-image"> -->
-                        <h3 class="text-dark mb-auto">Tandarma</h3>
+                        <h3 class="text-dark mb-auto">@Model.Nom</h3>
                     </div>
                 </div>
                 <!--/ meta -->
@@ -58,27 +61,27 @@
                                         <div class="about-info-p">
                                             <strong>Nom de l'association</strong>
                                             <br />
-                                            <p class="text-muted">Tandarma</p>
+                                            <p class="text-muted">@Model.Nom</p>
                                         </div>
                                         <div class="about-info-p">
-                                            <strong>Téléphone</strong>
+                                            <strong>Téléphone 1</strong>
                                             <br />
-                                            <p class="text-muted">77 999 45 66</p>
+                                            <p class="text-muted">@Model.Tel_1</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Téléphone 2</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Tel_2</p>
                                         </div>
                                         <div class="about-info-p">
                                             <strong>Email</strong>
                                             <br />
-                                            <p class="text-muted">tandarma@gmail.com</p>
-                                        </div>
-                                        <div class="about-info-p m-b-0">
-                                            <strong>Nombre de membre</strong>
-                                            <br />
-                                            <p class="text-muted">45</p>
+                                            <p class="text-muted">@Model.Email</p>
                                         </div>
                                         <div class="about-info-p m-b-0">
                                             <strong>Adresse</strong>
                                             <br />
-                                            <p class="text-muted">Colobane</p>
+                                            <p class="text-muted">@Model.Adresse</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,24 +123,58 @@
                                 <h3 class="panel-title">Modifier association</h3>
                             </div>
                             <div class="panel-body">
-                                <form role="form">
+                                <form class="form-horizontal" role="form" method="post" action="Read">
                                     <div class="form-group">
-                                        <label for="FullName">Nom de l'association</label>
-                                        <input type="text" value="Tandarma" id="FullName" class="form-control">
+                                        <label class="col-md-2 control-label" for="id">Id</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="id" asp-for="Id" readonly>
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="nombre">Nombre de membres</label>
-                                        <input type="number" value="45" id="nombre" class="form-control">
+                                        <label class="col-md-2 control-label" for="nom">Nom</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="nom" placeholder="Saisir le nom de l'association" asp-for="Nom">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="date_crea">Date de création</label>
+                                        <div class="col-md-10">
+                                            <input type="date" class="form-control" id="date_crea" asp-for="Annee_Creation">
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="Username">Téléphone</label>
-                                        <input type="tel" value="77 785 45 22" id="Username" class="form-control">
+                                        <label class="col-md-2 control-label" for="tel1">Téléphone 1</label>
+                                        <div class="col-md-10">
+                                            <input type="tel" class="form-control" id="tel1" placeholder="Saisir le numéro de téléphone 1" asp-for="Tel_1">
+                                        </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="tel" value="tandarma@gmail.com" id="email" class="form-control">
+                                        <label class="col-md-2 control-label" for="tel2">Téléphone 2</label>
+                                        <div class="col-md-10">
+                                            <input type="tel" class="form-control" id="tel3" placeholder="Saisir le numéro de téléphone 2" asp-for="Tel_2">
+                                        </div>
                                     </div>
-                                    <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Modifier</button>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="email">Email</label>
+                                        <div class="col-md-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Saisir le numéro l'email' de l'association" asp-for="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="adrr">Adresse</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="adrr" placeholder="Saisir l'adresse de l'association" asp-for="Adresse">
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <button type="submit" class="btn btn-primary btn-custom waves-effect waves-light m-b-5 btn-lg">Modifier</button>
+                                                <button type="submit" class="btn btn-danger btn-custom waves-effect waves-light m-b-5 btn-lg" asp-action="Delete" asp-controller="Association">Supprimer</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
 
                             </div>
