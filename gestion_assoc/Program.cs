@@ -1,7 +1,13 @@
+using gestion_assoc.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<GestionAssocDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("GestionAssocConnectionString")));
 
 var app = builder.Build();
 
