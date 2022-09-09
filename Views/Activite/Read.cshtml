@@ -1,0 +1,217 @@
+@model Activite
+
+
+@{
+    ViewData["Title"] = "Infos activite";
+}
+
+<!-- Start content -->
+<div class="content">
+    <div class="wraper container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="bg-light text-center">
+                    <div class="bg-picture text-center" style="background-image:url('images/big/bg.jpg')"></div>
+                    <div class="profile-info-name">
+                        <!-- <img src="images/avatar-1.jpg" class="thumb-lg img-circle img-thumbnail" alt="profile-image"> -->
+                        <h3 class="text-dark mb-auto">@Model.Nom</h3>
+                    </div>
+                </div>
+                <!--/ meta -->
+            </div>
+        </div>
+        <div class="row user-tabs">
+            <div class="col-lg-6 col-md-9 col-sm-9">
+                <ul class="nav nav-tabs tabs">
+                    <li class="active tab">
+                        <a href="#home-2" data-toggle="tab" aria-expanded="false" class="active">
+                            <span class="visible-xs"><i class="fa fa-home"></i></span>
+                            <span class="hidden-xs">Infos</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#profile-2" data-toggle="tab" aria-expanded="false">
+                            <span class="visible-xs"><i class="fa fa-user"></i></span>
+                            <span class="hidden-xs">Activité</span>
+                        </a>
+                    </li>
+                    <li class="tab">
+                        <a href="#settings-2" data-toggle="tab" aria-expanded="false">
+                            <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                            <span class="hidden-xs">Paramètres</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="tab-content profile-tab-content">
+                    <div class="tab-pane active" id="home-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Personal-Information -->
+                                <div class="panel panel-default panel-fill">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Informations de l'activite</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="about-info-p">
+                                            <strong>Nom de l'activité</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Nom</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Libellle</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Libelle</p>
+                                        </div>
+                                             <div class="about-info-p">
+                                            <strong>Date prévue</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Date_prev</p>
+                                        </div>
+
+                                      <div class="about-info-p">
+                                            <strong>Date exécution</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Date_exec</p>
+                                        </div>
+                                         <div class="about-info-p">
+                                            <strong>Type</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Type</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Besoins</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Besoins</p>
+                                        </div>
+                                        <div class="about-info-p">
+                                            <strong>Compte rendu</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.CompteRendu</p>
+                                        </div>
+                                        <div class="about-info-p m-b-0">
+                                            <strong>Lieu</strong>
+                                            <br />
+                                            <p class="text-muted">@Model.Lieu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Personal-Information -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="tab-pane" id="profile-2">
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+
+                            <div class="panel-body">
+                                <div class="timeline-2">
+                                    <div class="time-item">
+                                        <div class="item-info">
+                                            <p><a href="" class="text-info">@Model.Nom</a> s'est tenue le @Model.Date_exec à @Model.Lieu <a href="#" class="text-success"></a>.</p>
+                                            <!-- <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Personal-Information -->
+                    </div>
+
+
+
+                    <div class="tab-pane" id="settings-2">
+                        <!-- Personal-Information -->
+                        <div class="panel panel-default panel-fill">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Modifier activite</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal" role="form" method="post" action="Read">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Id" >Id</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" asp-for="Id" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Nom">Nom</label>
+                                        <div class="col-md-10">
+                                            <input asp-for="Nom" type="text" class="form-control" id="nom" placeholder="Saisir le nom de l'activite">
+                                        </div>
+                                    </div>
+
+                                       <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Libelle">Libelle</label>
+                                        <div class="col-md-10">
+                                            <input asp-for="Libelle" type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Date_prev">Date prévue</label>
+                                        <div class="col-md-10">
+                                            <input type="date" class="form-control" asp-for="Date_prev">
+                                        </div>
+                                    </div>
+                                                        <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Date_exec">Date exec</label>
+                                        <div class="col-md-10">
+                                            <input type="date" class="form-control" asp-for="Date_exec">
+                                        </div>
+                                    </div>
+                                             <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Type">Type</label>
+                                        <div class="col-md-10">
+                                <textarea asp-for="Type" type="text" class="form-control"></textarea>
+                                        </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="Besoins">Besoins</label>
+                                        <div class="col-md-10">
+                                <textarea asp-for="Besoins" type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" asp-for="CompteRendu">Compte rendu</label>
+                                        <div class="col-md-10">
+                                <textarea asp-for="CompteRendu" type="text" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" >Lieu</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control"  placeholder="lieu" asp-for="Lieu">
+                                        </div>
+                                  
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center">
+                                                <button type="submit" class="btn btn-primary btn-custom waves-effect waves-light m-b-5 btn-lg">Modifier</button>
+                                                <button type="submit" class="btn btn-danger btn-custom waves-effect waves-light m-b-5 btn-lg" asp-action="Delete" asp-controller="Activite">Supprimer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- Personal-Information -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- container -->
+
+</div> <!-- content -->

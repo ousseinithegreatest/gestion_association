@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Infos membre";
+}
+
+
+<div class="wraper container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="bg-picture text-center bg-memb">
+                <div class="bg-picture-overlay"></div>
+                <div class="profile-info-name">
+                    <img src="~/images/avatar-1.jpg" class="thumb-lg img-circle img-thumbnail" alt="profile-image">
+                    <h3 class="text-white">Sophie Diop</h3>
+                </div>
+            </div>
+            <!--/ meta -->
+        </div>
+    </div>
+    <div class="row user-tabs">
+        <div class="col-lg-6 col-md-9 col-sm-9">
+            <ul class="nav nav-tabs tabs">
+                <li class="active tab">
+                    <a href="#home-2" data-toggle="tab" aria-expanded="false" class="active">
+                        <span class="visible-xs"><i class="fa fa-home"></i></span>
+                        <span class="hidden-xs">Infos</span>
+                    </a>
+                </li>
+                <li class="tab">
+                    <a href="#profile-2" data-toggle="tab" aria-expanded="false">
+                        <span class="visible-xs"><i class="fa fa-user"></i></span>
+                        <span class="hidden-xs">Activité</span>
+                    </a>
+                </li>
+                <li class="tab">
+                    <a href="#settings-2" data-toggle="tab" aria-expanded="false">
+                        <span class="visible-xs"><i class="fa fa-cog"></i></span>
+                        <span class="hidden-xs">Paramètres</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="tab-content profile-tab-content">
+                <div class="tab-pane active" id="home-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Personal-Information -->
+                            <div class="panel panel-default panel-fill">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Personal Information</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="about-info-p">
+                                        <strong>Nom complet</strong>
+                                        <br />
+                                        <p class="text-muted">Sophie Diop</p>
+                                    </div>
+                                    <div class="about-info-p">
+                                        <strong>Téléphone</strong>
+                                        <br />
+                                        <p class="text-muted">77 999 45 66</p>
+                                    </div>
+                                    <div class="about-info-p">
+                                        <strong>Email</strong>
+                                        <br />
+                                        <p class="text-muted">sdiop@gmail.com</p>
+                                    </div>
+                                    <div class="about-info-p m-b-0">
+                                        <strong>Adresse</strong>
+                                        <br />
+                                        <p class="text-muted">Keur Mbaye Fall</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Personal-Information -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="tab-pane" id="profile-2">
+                    <!-- Personal-Information -->
+                    <div class="panel panel-default panel-fill">
+
+                        <div class="panel-body">
+                            <div class="timeline-2">
+                                <div class="time-item">
+                                    <div class="item-info">
+                                        <p><a href="" class="text-info">Sophie Diop</a> a participer à la cotisation de l'association <a href="#" class="text-success">Tandarma</a>.</p>
+                                        <!-- <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet tellus ut tincidunt euismod. "</em></p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Personal-Information -->
+                </div>
+
+
+
+                <div class="tab-pane" id="settings-2">
+                    <!-- Personal-Information -->
+                    <div class="panel panel-default panel-fill">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Modifier profile</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="FullName">Nom complet</label>
+                                    <input type="text" value="Sophie Diop" id="FullName" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="email" value="sdiop@gmail.com" id="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Username">Téléphone</label>
+                                    <input type="tel" value="77 785 45 22" id="Username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Password">Mot de passe</label>
+                                    <input type="password" placeholder="" id="Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="RePassword">Confirmez le mot de passe</label>
+                                    <input type="password" placeholder="" id="RePassword" class="form-control">
+                                </div>
+                                <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Modifier</button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- Personal-Information -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
