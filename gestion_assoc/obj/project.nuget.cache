@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pvmY9BeW1n0uH2vKfWcwmz2BmMX7PUds+bAlN+n257TD/VW4HGC0FeSV1FLtBtQq3P+ED9DZxDVsnKXB5165+g==",
+  "dgSpecHash": "hc1VzQF2fIWIXLzx8cKQgtVQ9+CLDBN7kdT78P8A66kwy8GPsIYvuIssgXTp+rncIh8WYfd1T3wCRBw6yY8nvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\gestion_assoc.csproj",
+  "projectFilePath": "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\gestion_assoc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vinar\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
