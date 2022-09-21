@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\gestion_assoc.csproj": {}
+    "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\gestion_assoc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\gestion_assoc.csproj": {
+    "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\gestion_assoc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\gestion_assoc.csproj",
+        "projectUniqueName": "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\gestion_assoc.csproj",
         "projectName": "gestion_assoc",
-        "projectPath": "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\gestion_assoc.csproj",
+        "projectPath": "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\gestion_assoc.csproj",
         "packagesPath": "C:\\Users\\vinar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinar\\source\\repos\\gestion_assoc\\gestion_assoc\\obj\\",
+        "outputPath": "C:\\Users\\vinar\\source\\repos\\gestion_association\\gestion_assoc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
